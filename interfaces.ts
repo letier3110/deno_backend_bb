@@ -12,31 +12,31 @@ export enum FeedTypeEnum {
 }
 
 export interface ActivityEntry {
-  activityType:ActivityTypeEnum;
-  date: string; // iso
-  duration: number; //seconds
+  activityType: ActivityTypeEnum
+  date: string // iso
+  duration: number //seconds
 }
-  
+
 export interface FeedEntry {
-  feedType:FeedTypeEnum;
-  date: string; // iso
-  duration: number; //seconds
+  feedType: FeedTypeEnum
+  date: string // iso
+  duration: number //seconds
 }
 
 export interface UserStatsStorageEntry {
-  id: string; // slug foreign key?
-  activities: Array<ActivityEntry>;
-  feeds: Array<FeedEntry>;
+  id: string // slug foreign key?
+  activities: Array<ActivityEntry>
+  feeds: Array<FeedEntry>
 }
 
 export interface UserEntry {
-  id: string;
-  name: string;
-  babyname: string;
-  secret: string; // any type of auth/secret
+  id: string
+  name: string
+  babyname: string
+  secret: string // any type of auth/secret
 }
 
 export interface StorageEntry {
-  users: Array<UserEntry>;
-  userStats: Array<UserStatsStorageEntry>;
+  users: Array<UserEntry>
+  userStats: Array<UserStatsStorageEntry>
 }
